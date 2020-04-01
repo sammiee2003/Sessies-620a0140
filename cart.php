@@ -23,16 +23,16 @@
         $b = "#2";
         $c = "#3";
      
-        setcookie ("#1", $a);
-        setcookie ("#2", $b);
-        setcookie ("#3", $c);
+        setcookie ( "#1", $a );
+        setcookie ( "#2", $b );
+        setcookie ( "#3", $c);
 
         
 
         if (isset($_POST["bestel"])) {
             $_SESSION = "#" . $_POST["bestel"];
             if (isset($_COOKIE[$_SESSION])) {
-                echo "gekozen item:". $_COOKIE[$_SESSION];
+                echo "gekozen item:" . $_COOKIE[$_SESSION];
             }
         }
         ?>
