@@ -18,6 +18,7 @@
         </form>
         
         <?php
+        session_start();
         $a = "#1";
         $b = "#2";
         $c = "#3";
@@ -26,12 +27,12 @@
         setcookie ("#2", $b);
         setcookie ("#3", $c);
 
-        session_start();
+        
 
         if(isset($_POST["bestel"])){
-            $bestel = "#" . $_POST["bestel"];
-            if(isset($_COOKIE[$bestel])){
-                echo "gekozen item:". $_COOKIE[$bestel];
+            $_SESSION = "#" . $_POST["bestel"];
+            if(isset($_COOKIE[$_SESSION])){
+                echo "gekozen item:". $_COOKIE[$_SESSION];
             }
         }
         ?>
