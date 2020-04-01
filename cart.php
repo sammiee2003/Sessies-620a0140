@@ -23,9 +23,9 @@
         $b = "#2";
         $c = "#3";
      
-        setcookie ( "#1", $a );
-        setcookie ( "#2", $b );
-        setcookie ( "#3", $c);
+        setcookie("#1", $a);
+        setcookie("#2", $b);
+        setcookie("#3", $c);
 
         
 
