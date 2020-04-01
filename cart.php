@@ -29,9 +29,9 @@
 
         
 
-        if(isset($_POST["bestel"])){
+        if (isset($_POST["bestel"])) {
             $_SESSION = "#" . $_POST["bestel"];
-            if(isset($_COOKIE[$_SESSION])){
+            if (isset($_COOKIE[$_SESSION])) {
                 echo "gekozen item:". $_COOKIE[$_SESSION];
             }
         }
